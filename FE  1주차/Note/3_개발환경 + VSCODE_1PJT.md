@@ -29,13 +29,14 @@
 
 ##### 1. VSCODE 실행
 
-![image-20231009135529027](C:\Users\areur\AppData\Roaming\Typora\typora-user-images\image-20231009135529027.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/cfe54e7a-0740-479a-9e6e-7a550b4b1dc4)
+
 
 
 
 ##### 2. 새로운 파일 생성 > app.js 이름으로 파일 생성 
 
-![image-20231009135720935](C:\Users\areur\AppData\Roaming\Typora\typora-user-images\image-20231009135720935.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/1aff4be5-4143-4a8b-9d04-20489b42b857)
 
 
 
@@ -45,10 +46,12 @@
 console.log("Hello World"); 입력 
 ```
 
-![image-20231009135747820](C:\Users\areur\AppData\Roaming\Typora\typora-user-images\image-20231009135747820.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/1bf04b1f-ca6b-4b48-ac18-19096142ab48)
+
 
 
 
 ##### 4. 터미널에 node app,js 실행
 
-![image-20231009135820372](C:\Users\areur\AppData\Roaming\Typora\typora-user-images\image-20231009135820372.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/ae04cf63-53cb-4ba6-bd56-d334820f9599)
+
