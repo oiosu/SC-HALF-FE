@@ -24,7 +24,8 @@
 
 ##### 2. 자바스크립트 런타임 (1) 브라우저 
 
-![image-20231016151656334](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016151656334.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/183b3d4b-399f-43c9-abe9-6bd4ab054432)
+
 
 > 자바스크립트 실행이되는 환경은 굉장히 많지만, 그중에서 우리들이 가장 많이 사용하고 있는 실행환경 2가지 중 첫번째는 브라우저이다. 
 >
@@ -48,7 +49,8 @@
 
 ##### 3. 자바스크립트 런타임 (2) Node.js
 
-![image-20231016151743472](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016151743472.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/2b1a8dda-a98e-443f-bd79-928b022a3cde)
+
 
 > 브라우저와 차이점은, 브라우저는 web api 이지만 node.js는 c++바인딩&쓰레드 풀이다. 
 
@@ -96,3 +98,8 @@ const secoundFunction = () => {
 
 
 * 콜 스택 (실행되는 과정)
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ca8c05db62fce3490d5fec362d9b9e8dc5b16630

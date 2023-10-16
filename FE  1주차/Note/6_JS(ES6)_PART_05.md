@@ -133,7 +133,8 @@
 
 : 컴파일 이후에 실행이 가능 
 
-![image-20231016150111333](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016150111333.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/d07e4520-2dea-48ad-9291-81bef46676c1)
+
 
 ##### 🔻 인터프리터 
 
@@ -143,7 +144,7 @@
 
 : 변경 사항을 빠르게 테스트 가능 
 
-![image-20231016150202061](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016150202061.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/967bc92b-4132-4370-921d-d1df2eb0b2ab)
 
 ---
 
@@ -159,11 +160,13 @@
 
 ##### 3. JIT(Just-In-Time) 컴파일러 
 
-![image-20231016150338192](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016150338192.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/32889d99-ecfb-4d1f-af7d-642cdac74e54)
+
 
 * ##### JS엔진
 
-![image-20231016150645051](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016150645051.png)
+![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/69b893ba-619e-4666-bfd9-4cd9da5c874d)
+
 
 > 자바스크립트 엔진에서 소스코드를 작성하고 그 소스코드가 파싱이된다.
 >
@@ -183,7 +186,9 @@
 >
 > JS 엔진 내부 
 >
-> ![image-20231016150908195](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016150908195.png)
+> ![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/846334a7-7b75-45a2-a88c-9c3d35198bbe)![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/64ad0b60-cbbe-4176-bbea-27ad497ed53f)
+
+
 
 
 
