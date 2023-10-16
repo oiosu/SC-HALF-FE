@@ -96,7 +96,3 @@ const secoundFunction = () => {
 
 
 * 콜 스택 (실행되는 과정)
-
-
-
-1
