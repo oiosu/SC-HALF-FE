@@ -24,6 +24,8 @@
 
 ##### 2. 자바스크립트 런타임 (1) 브라우저 
 
+![image-20231016151656334](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016151656334.png)
+
 > 자바스크립트 실행이되는 환경은 굉장히 많지만, 그중에서 우리들이 가장 많이 사용하고 있는 실행환경 2가지 중 첫번째는 브라우저이다. 
 >
 > 자바스크립트 런타임에는 당연히 자바스크립트 엔진이 주요하게 들어가 있다. 그런데 자바스크립트 엔진만 브라우저에 있는 것은 아니다. 
@@ -45,6 +47,8 @@
 
 
 ##### 3. 자바스크립트 런타임 (2) Node.js
+
+![image-20231016151743472](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231016151743472.png)
 
 > 브라우저와 차이점은, 브라우저는 web api 이지만 node.js는 c++바인딩&쓰레드 풀이다. 
 
@@ -95,3 +99,4 @@ const secoundFunction = () => {
 
 
 
+1
