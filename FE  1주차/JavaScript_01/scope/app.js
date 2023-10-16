@@ -12,3 +12,25 @@ function calcAge(birthYear) {
 
 const firstName = 'su';
 console.log(calcAge(1990));
+// console.log(age); : 에러 발생===> scope와 연관있음
+
+
+// -----------------------------------
+
+// 어떤 함수 바깥에서 변수 선언이 되면 
+// 안에 있는 함수는 바깥에서 불러오는 것은 가능하다.
+function calcAge(birthYear) {
+    const age = 2025 - birthYear;
+
+    function printAge() {
+        const output = `${firstName}님, 당신은 ${age}살 입니다.`
+        console.log(output);
+    }
+
+    printAge();
+
+    return age;
+}
+
+const firstName2 = "su"
+calcAge(1990);
