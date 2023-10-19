@@ -98,8 +98,4 @@ const secoundFunction = () => {
 
 
 * 콜 스택 (실행되는 과정)
-<<<<<<< HEAD
-=======
 
-
->>>>>>> ca8c05db62fce3490d5fec362d9b9e8dc5b16630
