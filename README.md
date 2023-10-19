@@ -1,4 +1,4 @@
-##### 🟢 SuperCoding-HALF/FE
+##### [🟢 SuperCoding-HALF/FE](https://github.com/oiosu/SC-HALF-FE)
 
 ```bash
 $ git clone {{repository_url}}
@@ -13,7 +13,7 @@ $ git checkout {{branch_name}}
 ```
 
 ---
-#### 🤔 What is React
+#### [🤔 What is React](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/1_%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)
 > 사용자 인터페이스를 만들기위한 자바스크립트 라이브러리 
 
 * 3 features of React
@@ -80,15 +80,14 @@ $ git checkout {{branch_name}}
 
 #### [(3) Functions, function declarations and function expressions ](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_03.md)
 
-* Functions : 함수는 입력과 출력이 존재하는 로직의 단위, 자신의 외부 코드가 호출할 수 있는 하위 프로그램 (재사용)
+* Functions <br/>: 함수는 입력과 출력이 존재하는 로직의 단위 <br/> :자신의 외부 코드가 호출할 수 있는 하위 프로그램 (재사용)  <br/>
 
-◼ 함수 표현식 
+◼ 함수 표현식 : 호이스팅 영향을 받지 않음, 클로저/콜백 사용가능 
 ```javascript
 const 함수명 = function( ) {
   구현로직
 }
 ```
-> : 호이스팅 영향을 받지 않음, 클로저/콜백 사용가능 <br/>
 > : 함수를 만들기도 전에 호출이 된다면 예상하지도 못한 결과물이 만들어 질 수 도 있기 때문에 함수 표현식을 권장한다.
 
 ◼ 화살표 함수 
