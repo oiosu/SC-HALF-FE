@@ -1,4 +1,4 @@
-##### [🟢 SuperCoding-HALF/FE](https://github.com/oiosu/SC-HALF-FE)
+### [🟢 SuperCoding-HALF/FE](https://github.com/oiosu/SC-HALF-FE)
 
 ```bash
 $ git clone {{repository_url}}
@@ -13,7 +13,7 @@ $ git checkout {{branch_name}}
 ```
 
 ---
-#### [🤔 What is React](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/1_%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)
+### [🤔 What is React](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/1_%EB%A6%AC%EC%95%A1%ED%8A%B8%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80.md)
 > 사용자 인터페이스를 만들기위한 자바스크립트 라이브러리 
 
 * 3 features of React
@@ -28,16 +28,13 @@ $ git checkout {{branch_name}}
 
 * 명령형과 선언형
 
-| 명령형                     | 선언형                   |
-| -------------------------- | ------------------------ |
-| 어떻게 how 에 집중         | 무엇 what에 집중         |
-| 하나씩 명령을 해 주는 방식 | 컴포넌트에서 상태를 관리 |
-| 매번 바퀴를 만듦           | 재사용해서 생산성 향상   |
-| 추상화 수준이 낮음         | 추상화 수준이 높음       |
-| Vanilla JS, jQuery         | React, Vue               |
+> -- 명령형 : how에 집중, 하나씩 명령해주는 방식, 매전 바퀴를 만듦, 추상화 수준이 낮음, `Vanilla JS, jQuery `
+> -- 선언형 : what에 집중, 컴포넌트 상태를 관리, 재사용으로 생산성 향상, 추상화 수준이 높음, `React, Vue`
 
+---
 
-#### 🌳 Chapter 1. JavaScript
+### 🌳 Chapter 1. JavaScript
+
 
 #### [(1) Values, variables, and data types ](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/4_JS(ES6)_PART_01.md)
 
