@@ -76,4 +76,27 @@ $ git checkout {{branch_name}}
 
 [4] 논리연산자 (Logical Operator) : &&, ||
 
-[5] 삼항연산자 (Conditional Operator)
+[5] 삼항연산자 (Conditional Operator) 
+
+#### [(3) Functions, function declarations and function expressions ](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_03.md)
+
+* Functions : 함수는 입력과 출력이 존재하는 로직의 단위, 자신의 외부 코드가 호출할 수 있는 하위 프로그램 (재사용)
+
+◼ 함수 표현식 
+```javascript
+const 함수명 = function( ) {
+  구현로직
+}
+```
+> : 호이스팅 영향을 받지 않음, 클로저/콜백 사용가능 <br/>
+> : 함수를 만들기도 전에 호출이 된다면 예상하지도 못한 결과물이 만들어 질 수 도 있기 때문에 함수 표현식을 권장한다.
+
+◼ 화살표 함수 
+: ES6 버전에서 추가된 함수의 형태로 간결하기 때문에 사용을 권장한다. 
+```javascript
+const 함수명 = () => {\
+	구현 로직 
+}
+```
+
+
