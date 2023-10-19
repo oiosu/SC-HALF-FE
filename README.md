@@ -98,4 +98,43 @@ const 함수명 = () => {\
 }
 ```
 
+#### [(4) Arrays, Objects, Methods](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_04.md)
+
+[1] Array
+> 배열은 리스트와 비슷한 객체로서 순회와 변형 작업을 수행하는 메서드를 갖는다. <br/>
+> 배열은 요소 인덱스로 문자열을 사용할 수 없으며 무조건 정수만 허용한다.
+```bash
+키(key)를 가지고 있지 않다.
+순서를 고려한다.
+인덱스로 값을 참조한다.
+const newArray = [1, 2, 3];
+```
+
+* `map` What if you want to calculate your age? 
+```javascript
+const birthYearArray = [1990, 1992, 1994];
+const ageArray = birthYearArray.map(
+    birthYearArray => 2023 - birthYearArray
+);
+console.log(ageArray);
+```
+> birthYearArray 출생년도 배열에서 나이를 구하는 공식은 동일하기에, 배열의 그 값을 같은 함수로 로직으로 처리하여 return을 하고 싶다면 map 을 사용하면 된다. 순서대로 각각의 배열들의 원소들을 공식에 적용하여 처리한다.
+
+* Frequently used methods
+> * add element : `push`, `unshift`
+> * remove element : `pop`, `shift`
+> * get index : `indexOf`, `lastIndexOf`
+> * is contain : `includes`
+> * concatenate multiple arrays : `const combineArray = [...array1, ...array2];`
+
+[2] Object
+> 키 값을 기본적으로 가진다. 다양한 키 모듬 및 더 복잡한 엔티티들을 저장하는데 사용된다. <br/>
+> 객체는 object() 생성자 또는 객체 초기자/리터럴 구문을 통해 생성할 수 있다.
+```bash
+키(key)를 가지고 있다.
+순서를 고려하지 않는다. 
+키로 값을 참조한다.
+const newObject = {a : 1, b : 2};
+```
+
 
