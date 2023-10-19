@@ -185,5 +185,11 @@ const newObject = {a : 1, b : 2};
 `app.js` 파일을 실행했을 때 가장 먼저 생성이 되는 것은 전역 실행 컨텍스트 이다. 이 파일은 모든 자바스크립트 파일에 예외없이 실행이된다(전역이기 때문)
 
 
+#### [(7) Scopes, scope chains, hoisting](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_07.md)
 
+* Scope : 어떤 변수가 선언된 공간 또는 환경, 어떤 변수의 스코프는 해당 변수가 접근 될 수 있는 범위
+> 글로벌, 함수, 블록 스코프
 
+* Scope chains
+> `isAdult` 는 secondFunc 스코프에서 참조 가능
+> `decade`는 secondFunc 스코픝에서 참조 불가능
