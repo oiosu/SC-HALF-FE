@@ -174,5 +174,16 @@ const newObject = {a : 1, b : 2};
 > 최적화를 거칠때마다 이 엔진은 자바스크립트 코드를 향상시키는 방향으로 진화를 하게 된다.  <br/>
 
 
+#### [(6) JavaScript engine, runtime, execution context, call stack](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_06.md)
+
+* JavaScript engine : 자바스크립트 코드를 실행하는 코드 (V8 엔진 => Node.js / Chrome)
+* JavaScript 내부 (콜스택, 힙)
+* 자바스크립트 런타임 (1) 브라우저 : 브라우저 런타임에 web api 랑 콜백 큐 라는 요소가 있고, 콜백 큐에서 콜백 함수를 빼낼때는이벤트 루프를 통해서 빼낸다
+* 자바스크립트 런타임 (2) Node.js : 브라우저와 차이점은, 브라우저는 web api 이지만 node.js는 c++바인딩&쓰레드 풀이다.
+<br/>
+⭐ 실행 컨텍스트 : 자바스크립트가 실행되는 환경 <br/>
+`app.js` 파일을 실행했을 때 가장 먼저 생성이 되는 것은 전역 실행 컨텍스트 이다. 이 파일은 모든 자바스크립트 파일에 예외없이 실행이된다(전역이기 때문)
+
+
 
 
