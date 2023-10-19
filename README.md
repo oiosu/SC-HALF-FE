@@ -137,4 +137,8 @@ console.log(ageArray);
 const newObject = {a : 1, b : 2};
 ```
 
+#### [(5) Compiler, interpreter and JIT compiler](https://github.com/oiosu/SC-HALF-FE/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_05.md)
 
+◼ Features of the JavaScript language
+> [1] 하이레벨 언어 : 운영체제에 가까울 수록 로우레벨, 어플리케이션에 가까울수록 하이레벨이라고 한다, 메모리 자동관리, 성능 낮음
+> 
