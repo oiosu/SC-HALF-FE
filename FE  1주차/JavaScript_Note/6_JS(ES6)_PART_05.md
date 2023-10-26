@@ -186,7 +186,7 @@
 >
 > JS 엔진 내부 
 >
-> ![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/846334a7-7b75-45a2-a88c-9c3d35198bbe)![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/64ad0b60-cbbe-4176-bbea-27ad497ed53f)
+> ![image](https://github.com/oiosu/SC-HALF-FE/assets/99783474/846334a7-7b75-45a2-a88c-9c3d35198bbe)
 
 
 
