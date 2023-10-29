@@ -14,6 +14,12 @@ const profile = {
   year: 1991,
   calcAge: function () {
     console.log(this);
+
+    // 만약 안에서 함수를 선언해주면 어떻게 될까?
+    const isMillenial = () => {
+      console.log(this);
+    };
+    isMillenial();
   },
 };
 
