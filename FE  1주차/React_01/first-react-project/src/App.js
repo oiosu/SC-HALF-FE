@@ -1,27 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-import TextComponent from './component/TextComponent';
-import Section from './component/Section';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <TextComponent />
-        <Section />
-      </header>
+    <div className='wrapper'>
+      <div className='toast toast-success'>
+        <main className='toast__message'>
+          <header className='toast__message-title'>Success</header>
+          <p className='toast__message-text'>Right On! Your account has been updated.</p>
+        </main>
+        <button className='toast__button'>Dismiss</button>
+      </div>
+      <div className='toast toast-warning'>
+        <main className='toast__message'>
+          <header className='toast__message-title'>Success</header>
+          <p className='toast__message-text'>Right On! Your account has been updated.</p>
+        </main>
+        <button className='toast__button'>Dismiss</button>
+      </div>
+      <div className='toast toast-error'>
+        <main className='toast__message'>
+          <header className='toast__message-title'>Success</header>
+          <p className='toast__message-text'>Right On! Your account has been updated.</p>
+        </main>
+        <button className='toast__button'>Dismiss</button>
+      </div>
     </div>
   );
 }
