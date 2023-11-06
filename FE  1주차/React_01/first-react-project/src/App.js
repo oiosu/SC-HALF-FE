@@ -1,5 +1,7 @@
 import './App.css';
 import Toast from './component/Toast';
+import ToastButton from './component/ToastButton';
+import ToastMessage from './component/ToastMessage';
 
 function App() {
   const messageArray = [
@@ -20,10 +22,18 @@ function App() {
 
   return (
     <div className='wrapper'>
-      {messageArray.map((messgae) => {
-        <Toast message={message} />
-      })}
-
+      <Toast message={messageArray[0]} >
+        <ToastMessage message={messageArray[0]} />
+        <ToastButton />
+      </Toast>
+      <Toast message={messageArray[1]} >
+        <ToastMessage message={messageArray[1]} />
+        <ToastButton />
+      </Toast>
+      <Toast message={messageArray[2]}>
+        <ToastMessage message={messageArray[2]} />
+        <ToastButton />
+      </Toast>
     </div>
   );
 }
