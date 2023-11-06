@@ -41,11 +41,19 @@ html {
   font-family: inherit;
   font-size: initial;
   margin-left: 1rem;
+  /* 절반정도 투명하게ㄴ */
   opacity: 0.5;
   padding: 0;
 }
 
 .toast-success {
-  border-color: #008554;
+  border-color: #048556;
 }
 
+.toast-warning{
+  border-color: rgb(220, 51, 9);
+}
+
+.toast-error {
+  border-color: rgb(233, 197, 14);
+}
