@@ -45,15 +45,15 @@ html {
   opacity: 0.5;
   padding: 0;
 }
-
+/* 첫번째 */
 .toast-success {
   border-color: #048556;
 }
-
+/* 두번째 */
 .toast-warning{
   border-color: rgb(220, 51, 9);
 }
-
+/* 세번째 */
 .toast-error {
   border-color: rgb(233, 197, 14);
 }
