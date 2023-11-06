@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div className='wrapper'>
-      {messageArray.map((messgae, index) => {
-        <Toast title={messgae.title} text={message.text} />
+      {messageArray.map((messgae) => {
+        <Toast message={message} />
       })}
 
     </div>
