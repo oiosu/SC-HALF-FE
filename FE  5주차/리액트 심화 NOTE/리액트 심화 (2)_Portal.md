@@ -21,10 +21,55 @@ return (
 
 ##### 2. practice 4- 2
 
-```react
-const Backdrop = (props) => {
-}
-
-
+```html
+<div id="backdrop-root"></div>
+<div id="overlay-root"></div>
+<div id="root"></div>
 ```
 
+```react
+const Backdrop = (props) => {
+	return (
+        <div>
+            {ReactDOM.createPortal(
+            	<Backdrop onConfirm={props.onConfirm} />
+                 document.getElementById('backdrop-root')
+            )}
+            {
+                ReactDOM.createPortal(
+                  <ModalOverlay
+                        title={props.title}
+                        message={props.message}
+                        onConfirm={props.onConfirm}
+             		/>,
+                    document.getElementById('overlay-root')
+                )
+            }
+        </div>
+    );
+};
+```
+
+
+
+* React `createPortal` 
+
+: `createPortal` lets you render some children into a different part of the DOM
+
+```react
+<div>
+	<SomeComponent />
+    {createPortal(children, domNode, key?)}
+</div>
+```
+
+> ` key?` 3번째 인자는 옵셔널 하기 때문에 사용하지 않아도 된다. 
+
+
+
+---
+
+
+
+* 모달과 같은 overlay 컴포넌트는 전체 html 에서 동작하게 해야한다. 
+* 컴포넌트의 위치를 옮겨줄 때 React Portal 을 사용한다. 
