@@ -147,6 +147,8 @@ const restaurant = {
 > // { open: 10, close: 23 }
 > ```
 
+
+
 #### 비구조화(Destructuring) 할당 (3)
 
 ```javascript
@@ -215,12 +217,10 @@ const restaurant = {
 | ----------------------------- | ------------------ |
 | 배열, 문자열, Map, Set        | 일반 객체 (Object) |
 
- 
-
 ```javascript
 // 배열은 이터러블 => 스프레드 연산자를 사용할 수 있다.
 const arr = [1, 2, 3];
-
+//...
 const newArray = [5, 6, ...arr];
 console.log(newArray);
 // 출력값 : [5, 6, 1, 2, 3]
@@ -256,7 +256,42 @@ console.log(others);
 ```
 
 ```javascript
-const [Psizza, Risotto, ...othFoods] 
+const [Psizza, Risotto, ...otherFoods] 
 = [...restaurant.mainMenus, ...restaurant.startMenus]
 ```
 
+
+
+◼ 다른 예제 
+
+```javascript
+const { sat, ...weekdays } = retaurant.opening
+
+console.log(weekdays);
+```
+
+
+
+```javascript
+const add = function (...numbers) {
+  let sum = 0;
+    for(let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
+};
+
+add(2, 3);
+add(2, 3, 5, 6);
+add(54, 564, 434, 234 55);
+```
+
+
+
+---
+
+
+
+* JS 문법은 ES6 버전에 많이 바뀌었다. 
+* 비구조화 할당
+* 스프레드 연산자 
