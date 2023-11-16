@@ -262,4 +262,22 @@ console.log(i, j ,k);
 | 배열, 문자열, Map, Set        | 일반 객체 (Object) |
 
 
+#### [(11) 객체리터널, 옵셔널 체이닝, map, set](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_11.md)
+
+(1) 객체 리터널 (객체를 문자 그대로 표현할 수 있다.) : : ES6 버전에서 객체를 표현하는 방식의 변화 
+* 변수명과 객체 프로퍼티 같은 경우 중복 표현 생략
+* 객체 메서드 함수 표현식function 키워드 생략
+* 오브젝트 프로퍼티 명안에 연산 가능
+
+(2) 옵셔널 체이닝 
+*  `undefined`, `null` 에서는 어떤 프로퍼티를 참조할 수 없다. (TypeError) => 이 에러를 방지 하기 위해 만들어진 ES6 문법 옵셔널 체이닝이다.
+
+(3) Map : ES6 에서 추가된 KEY-VALUE 타입의 집합, KEY 는 중복해서 들어갈 수 없다, 이터러블(iterable)_ 순회가능한 구조 
+(4) Set : ES6에서 추가된 집합 객체, 순회가 가능하고 값이 중복해서 들어갈 수 없음, 이터러블(iterable)_ 순회가능한 구조 
+
+
+#### [(12) 일급함수, 고차함수, 클로저](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_12.md)
+
+---
+
 
