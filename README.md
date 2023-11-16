@@ -195,3 +195,282 @@ const newObject = {a : 1, b : 2};
 * Scope chains
 > `isAdult` 는 secondFunc 스코프에서 참조 가능
 > `decade`는 secondFunc 스코픝에서 참조 불가능
+
+
+#### [(8-(1)) this, call, apply, bind](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_08%20(1).md)
+#### [(8-(2)) this, call, apply, bind](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_08%20(1).md)
+
+* this : 모든 실행 컨텍스트에 만들어지는 특별한 함수(함수가 호출될 때만 값이 할당)
+* call : 함수를 호출하는 함수, 첫번째 인자에 this로 세팅하고 싶은 객체를 넘김, 나머지 인자를 입력
+* apply : 함수를 호출하는 함수, 첫 번째 인자에 this로 세팅하고 싶은 객체를 넘김, 나머지 인자를 배열로 입력
+
+
+#### [(9) 원시타입, 객체타입, 얕은복사, 깊은복사](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_09.md)
+
+👀 Lodash : A modern JavaScript utilty library delivering modularity, performance & extras.
+> 자바스크립트에서 utilty성 모듈, 기능들 등을  Lodash 라는 것을 통해 작업을 하면, 쉽고 빠르게 작업이 가능하다.
+
+#### [(10) 비구조화(Destructuring) 할당, 스프레드(...) 연산자](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_10.md)
+
+(1) 비구조화 할당 : 배열의 값을 인덱스로 참조하는 것이 일반적이지만, 다음과 같이 구조를 분해해서 할당 받을 수 있다. 이러한 방법을 비구조화 할당이라고 한다.
+```javascript
+const arr = [1, 2, 3]
+const [x, y, z] = arr;
+// 출력값 : 1 2 3 
+```
+
+⭐ 협업에서 많이 사용하고 있는 문법 
+```javascript
+const restaurant = {
+    name: 'Super Pizza', 
+    location: 'Rome, Italy', 
+    startMenus: ['Focaccia', 'Bruschetta', 'Garlic Bread']
+    mainMenus: ['Pizza', 'Pasta', 'Risotto'],
+    
+    order: function(ftarterIndex, mainIndex){
+        return [this.startMenus[starterIndex], this.mainMenus[mainIndex]]
+    }
+}
+```
+```javascript
+const [first, ,third] = restaurant.startMenus;
+console.log(first);
+console.log(third);
+```
+
+* 비구조화 할당 사용해보기
+```javascript
+const [startMenu, mainMenu] = restaurant.order(1, 2);
+console.log(startMenu, mainMenu);
+```
+
+* 비구조화 할당 응용(배열안에 배열 원소를 직접 넣어주고 싶다면? )
+```javascript
+const nested = [2, 4, [5, 6]];
+const [i, , [j,k]] = nested;
+console.log(i, j ,k);
+//출력된 값 : 2, 5, 6
+```
+
+(2) 스프레드(...) 연산자 
+: `스프레드(...) 연산자`는 이터러블 객체에서만 가능 
+🤔 이터러블 : 순회가능한 객체, For----of 반복문 사용이 가능 
+
+
+| 이터러블 (순회하다, 반복하다) | 이터러블 아님      |
+| ----------------------------- | ------------------ |
+| 배열, 문자열, Map, Set        | 일반 객체 (Object) |
+
+
+#### [(11) 객체리터널, 옵셔널 체이닝, map, set](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_11.md)
+
+(1) 객체 리터널 (객체를 문자 그대로 표현할 수 있다.) : : ES6 버전에서 객체를 표현하는 방식의 변화 
+* 변수명과 객체 프로퍼티 같은 경우 중복 표현 생략
+* 객체 메서드 함수 표현식function 키워드 생략
+* 오브젝트 프로퍼티 명안에 연산 가능
+
+(2) 옵셔널 체이닝 
+
+*  `undefined`, `null` 에서는 어떤 프로퍼티를 참조할 수 없다. (TypeError) => 이 에러를 방지 하기 위해 만들어진 ES6 문법 옵셔널 체이닝이다.
+
+
+(3) Map : ES6 에서 추가된 KEY-VALUE 타입의 집합, KEY 는 중복해서 들어갈 수 없다, 이터러블(iterable)_ 순회가능한 구조 
+(4) Set : ES6에서 추가된 집합 객체, 순회가 가능하고 값이 중복해서 들어갈 수 없음, 이터러블(iterable)_ 순회가능한 구조 
+
+
+#### [(12) 일급함수, 고차함수, 클로저](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_12.md)
+
+---
+
+### 🌳 Chapter 2. React
+
+#### [(1) 이벤트](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/2.%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md) 
+
+* 이벤트 핸들러
+  : 이벤트가 발생되면 실행되는 코드 블럭(보통 프로그래머가 만드는 자바스크립트 함수)
+  : 코드 블럭이 이벤트에 응답해서 실행되기 위해 정의되었을 때, 이를 이벤트 핸들러 등록(register)했다고 함
+
+*  HTMLButtonElement
+  : EventTarget > Node > Element > HTMLElement > HTMLButtonElement
+
+* 이벤트 리스너
+  : 이벤트(사용자의 행동)를 듣는(지켜보는) 메서드, DOM 요소가 필요
+
+#### [(2) state](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/3.%20state.md)  
+
+* state
+  : 컴포넌트 내에서 바뀔 때마다 항상 컴포넌트를 업데이트 해줄 수 있는 값
+> state, props => 값이 바뀔 때 마다 컴포넌트는 업데이트
+> state vs props
+> state : 컴포넌트 안에서 조작할 수 있음
+> props : 부모 컴포넌트에서 자식 컴포넌트로 내려줘야 하는 값임
+
+
+#### [(3) useState](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/4.%20useState.md) 
+
+* useState : State를 업데이트 해주는 React 라이브러리에서 제공해주는 빌트인 훅
+  🤔 Hook? : 리액트 v16.8 버전부터 나온 기능, 함수형 컴포넌트에서만 쓸 수 있는 함수로 리액트의 lifecycle 기능을 연동(hook) 할 수 있음
+
+(1) 해당 컴포넌트 안에서만 사용할 수 있다.
+(2) const [state, setState] = useState(initialState) 와 같이 사용
+
+```javascript
+import React, { useState } from "react";
+
+const Toast = ({messgae}) => {
+	const [text, setText] = useState('sample')
+    const buttonClickHandler = (title) => {
+        setText("changed!");
+        console.log(title);
+    }l
+}
+```
+※ 주의 : state 를 잘못 사용하면 컴포넌트 리렌더링이 많이 일어날 수 있음을 주의하기 
+
+
+#### [(4) Form Input](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/5.%20Form%20Input.md)  
+
+* form input은 <form> <input> 태그를 통해 값을 입력할 수 있는 요소를 추가
+
+* form input에 값을 입력하는 변화는 onChange 메서드를 사용
+
+* 여러 개의 상태 처리 시 각각 처리해 주어도 되고, 객체로 하나로 만들어서 처리해 주는 것도 가능
+
+#### [(5) Form 제출](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/6.%20Form%20%EC%A0%9C%EC%B6%9C.md)
+
+
+* `<form>` 에는 onSubmit 이벤트 리스너가 있어서 제출 이벤트를 핸들링
+
+* 기본 이벤트를 막고 싶다면 event.preventDefault() 를 사용
+
+* Two-way binding을 통해 상태와 input의 value를 양 방향 연동
+> 만약 form을 제출하고 값을 모두 초기화를 해주고 싶다면?
+> 1. input에 상태를 value 속성으로 넣어준 후
+> 2. 제출을 한 후에 상태를 초기화 해주면
+> 3. value에 초기화된 상태가 반영되어 UI에 업데이트
+
+
+#### [(6) 자식과 부모간 상태 이동](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/7.%20%EC%9E%90%EC%8B%9D%EA%B3%BC%20%EB%B6%80%EB%AA%A8%EA%B0%84%20%EC%83%81%ED%83%9C%20%EC%9D%B4%EB%8F%99.md)
+
+* 자식 컴포넌트의 상태를 부모 컴포너트로 올리고 싶다면, 부모 컴포넌트에서 함수를 만들어서 props를 통해 전달해 주어야 한다.
+
+* 부모 컴포넌트의 업데이트 된 상태를 자식 컴포넌트로 전달해 주어 UI 가 자동으로 업데이트 해서 변화를 반영할 수 있게 한다.
+
+#### [(7) 이미지 처리](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/8.%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%B2%98%EB%A6%AC.md)
+
+* 이미지 파일의 종류는 jpg, png, svg 등이 있고 각각의 특징에 맞게 적절하게 사용하면 된다.
+
+* 이미지 파일의 크기가 1000b(9.7KB) 기준으로 큰지 작은지에 따라 이미지 파일을 브라우저에서 처리하는 방식이 달라진다.
+
+#### [(8) 리스트 렌더링(1) _ 리스트 렌더링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/9.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%ED%84%B0%EB%A7%81(1)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81.md)
+
+* 부모 컴포넌트의 state 를 자식 리스트 컴포넌트에 연동하면 해당 리스트에 값이 추가되고 삭제가 될 때마다 바로 화면이 업데이트 된다.
+
+#### [(9) 리스트렌더링(2) key](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/10.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%EB%8D%94%EB%A7%81(2)%20key.md)
+
+> Warning: Each child in a list chould have a unique "key" prop. Check the render method of Expenses . See ___ for more information. at ExpenseItem, Expenses, App
+> 각각의 자식 컴포넌트가 고유한 키 속성을 가지고 있어야 한다. `Expenses` 의 렌더 되는 메소드를 살펴봐라.
+
+* 리액트에서 리스트 형태로 만드는 모든 컴포넌트 (html tag, 커스텀 컴포넌트 등)에 대해서 key 값을 고유하게 부여해 주어야 에러가 발생하지 않는다.
+```javascript
+key={item.id}
+```
+=> 리액트 컴포넌트(또는 HTML tag)를 재사용해서 map 등의 함수로 여러 개를 만들 때 각각을 구분해 주는 unique key 값이 필요하다.
+
+#### [(10) 리스트 필터링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/11.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%EB%8D%94%EB%A7%81(3)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%95%84%ED%84%B0%EB%A7%81.md)
+
+* 리스트에 필터를 걸어주기 위해서는 state로 조건을 가지고 있고, filter() 메서드를 사용해서 매번 state가 바뀔 때마다 업데이트를 해준다.
+
+#### [(11) 동적인 스타일링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/12.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(1)%20%EB%8F%99%EC%A0%81%EC%9D%B8%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81.md)
+
+(1) 동적인 인라인 스타일링
+
+(2) CSS 클래스를 동적으로 조작하기 
+
+#### [(12) styled-components](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/13.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(2)%20styled-components.md)
+
+* css-in-js 방식은 자바스크립트에서 css를 작성하는 방식이다.
+
+* css-in-js 방식은 css를 컴포넌트 레벨로 추상화 해서 관리할 수 있다.
+
+* styled-components는 리액트 컴포넌트 스타일링을 위해 css를 js로 쓸 수 있게 만든 가장 많이 쓰이는 도구 중 하나이다.
+
+#### [(13) CSS Modules](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/14.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(3)%20CSS%20Modules.md)
+
+* CSS Module은 일반적인 CSS 사용 방식과 비슷하나, CSS 클래스 명을 중첩되지 않게 사용할 수 있다.
+
+* 동적으로 CSS Moduel 을 사용하고 싶을 땐, string className 처럼 사용할 수 있다.
+
+#### [(14) tailwindcss](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/15.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(4)%20tailwindcss.md)
+
+* CSS Framwork는 잘 만들어진 스타일링 도구
+
+* Taiilwindcss 는 utility first CSS 프레임워크로 일관성이 있고 커스텀하기 편해서 빠르게 도입하기 좋은 도구이다.
+
+#### [(15) 디버깅 Part1](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/16.%20%EB%94%94%EB%B2%84%EA%B9%85%20Part1.md)
+
+| 컴파일 에러                                                  | 런타임 에러                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 컴파일을 할 때 발생하는 에러 <br />* Syntax Error<br />* Type Error<br />* Refernece Error | 컴파일 과정을 마친 후 에 사용자에 의해 실행 시 에러 <br />* 0 나누기 오류<br />* Null 참조 오류 <br />* 메모리 부족 오류 |
+
+* 중단점을 찍어서 프로그램이 실행 될 때 원하는 지점을 멈추고 해당 코드 전후를 확인 할 수 있다.
+
+#### [(16) 디버깅 Part2](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/17.%20%EB%94%94%EB%B2%84%EA%B9%85%20Part2.md)
+
+* React Devtool은 리액트 디버깅에 특화된 크롬 익스텐션 도구이다.
+
+* Google Lighthouse 프로파일링을 통해 표준에 맞는 웹을 개발 할 수 있다.
+
+#### [(17) 이벤트 버블링과 캡처링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/18.%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC%20%EC%BA%A1%EC%B2%98%EB%A7%81.md)
+
+* DOM에서 이벤트가 발생 시 타겟 요소이 이벤트 핸들러를 찾는 과정이 존재
+
+* 이벤트 캡처링은 타겟 요소까지 내려가는 과정
+
+* 이벤트 버블링은 타겟 요소에서 위로 올라오는 과정
+
+#### [(18) 복잡한 이벤트와 상태 디자인하기](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/19.%20%EB%B3%B5%EC%9E%A1%ED%95%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80%20%EC%83%81%ED%83%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0.md)
+
+*  드롭다운 컴포넌트 (가장 기본적이므로 알아두고 있기)
+
+🥕 state `isopen` : (옵션이 열림 : true), (옵션이 사라짐 : false)
+
+🥕 state `selectedOption` : (옵션이 선택됨 : object), (옵션이 선택되지 않음 : null)
+
+🥕 event handler `handleSelect` : (옵션을 클릭함)
+
+🥕 event handler `hadleClick` : (드롭다운을 클릭함)
+
+#### [(19) 데이터 정렬](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/20.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%95%EB%A0%AC.md)
+
+* number 타입을 정렬 할 때는 comparator 함수를 사용해주어야 한다.
+
+* string 타입을 정렬할 때는 localCompare() 메서드를 사용해 주어야 한다.
+
+* object 타입의 정렬을 할 때는 정렬 기준에 맞는 로직을 작성해 주어야 한다.
+
+#### [(20) 리액트 심화 (1)_Fragment](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(1)_Fragment.md)
+
+* JSX 문법에서는 요소를 두 개 이상 리턴할 수 없다.
+
+* 이문제를 해결하기 위해 REACT FRAGMENT를 사용할 수 있다. (React.Fragment (공식 문서 참고하기))
+
+#### [(20) 리액트 심화 (2)_Portal](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(2)_Portal.md)
+
+* 모달과 같은 overlay 컴포넌트는 전체 html 에서 동작하게 해야한다.
+
+* 컴포넌트의 위치를 옮겨줄 때 React Portal 을 사용한다.
+
+#### [(21) 리액트 심화 (3)_ref](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(3)_ref.md)
+
+* `ref` 를 사용하면 직접 dom을 참조할 수 있다.
+
+* `ref`를 사용하면 상태를 사용하지 않고 dom의 값들을 조작할 수 있다.
+
+#### [(22) 리액트 심화 (4) useEffect-(1)](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(4)_useEffect.md)
+
+* 사이드 이펙트는 일반적인 UI 렌더링 사이클과 다르게 동작한다.
+
+* useEffect 훅을 통해 사이드 이펙트를 컴포넌트 안에서 핸들링 할 수 있다.
+
+
