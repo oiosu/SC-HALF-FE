@@ -356,6 +356,31 @@ const Toast = ({messgae}) => {
 
 #### [(8) 리스트 렌더링(1) _ 리스트 렌더링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/9.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%ED%84%B0%EB%A7%81(1)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81.md)
 
+* 부모 컴포넌트의 state 를 자식 리스트 컴포넌트에 연동하면 해당 리스트에 값이 추가되고 삭제가 될 때마다 바로 화면이 업데이트 된다.
 
+#### [(9) 리스트렌더링(2) key](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/10.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%EB%8D%94%EB%A7%81(2)%20key.md)
 
+> Warning: Each child in a list chould have a unique "key" prop. Check the render method of Expenses . See ___ for more information. at ExpenseItem, Expenses, App
+> 각각의 자식 컴포넌트가 고유한 키 속성을 가지고 있어야 한다. `Expenses` 의 렌더 되는 메소드를 살펴봐라.
+
+* 리액트에서 리스트 형태로 만드는 모든 컴포넌트 (html tag, 커스텀 컴포넌트 등)에 대해서 key 값을 고유하게 부여해 주어야 에러가 발생하지 않는다.
+```javascript
+key={item.id}
+```
+=> 리액트 컴포넌트(또는 HTML tag)를 재사용해서 map 등의 함수로 여러 개를 만들 때 각각을 구분해 주는 unique key 값이 필요하다.
+
+#### [(10) 리스트 필터링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/11.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%EB%8D%94%EB%A7%81(3)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%ED%95%84%ED%84%B0%EB%A7%81.md)
+
+* 리스트에 필터를 걸어주기 위해서는 state로 조건을 가지고 있고, filter() 메서드를 사용해서 매번 state가 바뀔 때마다 업데이트를 해준다.
+
+#### [(11) 동적인 스타일링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/12.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(1)%20%EB%8F%99%EC%A0%81%EC%9D%B8%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81.md)
+
+(1) 동적인 인라인 스타일링
+(2) CSS 클래스를 동적으로 조작하기 
+
+#### [(12) styled-components](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/13.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(2)%20styled-components.md)
+
+* css-in-js 방식은 자바스크립트에서 css를 작성하는 방식이다.
+* css-in-js 방식은 css를 컴포넌트 레벨로 추상화 해서 관리할 수 있다.
+* styled-components는 리액트 컴포넌트 스타일링을 위해 css를 js로 쓸 수 있게 만든 가장 많이 쓰이는 도구 중 하나이다.
 
