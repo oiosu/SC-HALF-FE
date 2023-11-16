@@ -195,3 +195,71 @@ const newObject = {a : 1, b : 2};
 * Scope chains
 > `isAdult` 는 secondFunc 스코프에서 참조 가능
 > `decade`는 secondFunc 스코픝에서 참조 불가능
+
+
+#### [(8-(1)) this, call, apply, bind](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_08%20(1).md)
+#### [(8-(2)) this, call, apply, bind](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%201%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_08%20(1).md)
+
+* this : 모든 실행 컨텍스트에 만들어지는 특별한 함수(함수가 호출될 때만 값이 할당)
+* call : 함수를 호출하는 함수, 첫번째 인자에 this로 세팅하고 싶은 객체를 넘김, 나머지 인자를 입력
+* apply : 함수를 호출하는 함수, 첫 번째 인자에 this로 세팅하고 싶은 객체를 넘김, 나머지 인자를 배열로 입력
+
+
+#### [(9) 원시타입, 객체타입, 얕은복사, 깊은복사](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_09.md)
+
+👀 Lodash : A modern JavaScript utilty library delivering modularity, performance & extras.
+> 자바스크립트에서 utilty성 모듈, 기능들 등을  Lodash 라는 것을 통해 작업을 하면, 쉽고 빠르게 작업이 가능하다.
+
+#### [(10) 비구조화(Destructuring) 할당, 스프레드(...) 연산자](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%202%EC%A3%BC%EC%B0%A8/JavaScript_Note/6_JS(ES6)_PART_10.md)
+
+(1) 비구조화 할당 : 배열의 값을 인덱스로 참조하는 것이 일반적이지만, 다음과 같이 구조를 분해해서 할당 받을 수 있다. 이러한 방법을 비구조화 할당이라고 한다.
+```javascript
+const arr = [1, 2, 3]
+const [x, y, z] = arr;
+// 출력값 : 1 2 3 
+```
+
+⭐ 협업에서 많이 사용하고 있는 문법 
+```javascript
+const restaurant = {
+    name: 'Super Pizza', 
+    location: 'Rome, Italy', 
+    startMenus: ['Focaccia', 'Bruschetta', 'Garlic Bread']
+    mainMenus: ['Pizza', 'Pasta', 'Risotto'],
+    
+    order: function(ftarterIndex, mainIndex){
+        return [this.startMenus[starterIndex], this.mainMenus[mainIndex]]
+    }
+}
+```
+```javascript
+const [first, ,third] = restaurant.startMenus;
+console.log(first);
+console.log(third);
+```
+
+* 비구조화 할당 사용해보기
+```javascript
+const [startMenu, mainMenu] = restaurant.order(1, 2);
+console.log(startMenu, mainMenu);
+```
+
+* 비구조화 할당 응용(배열안에 배열 원소를 직접 넣어주고 싶다면? )
+```javascript
+const nested = [2, 4, [5, 6]];
+const [i, , [j,k]] = nested;
+console.log(i, j ,k);
+//출력된 값 : 2, 5, 6
+```
+
+(2) 스프레드(...) 연산자 
+: `스프레드(...) 연산자`는 이터러블 객체에서만 가능 
+🤔 이터러블 : 순회가능한 객체, For----of 반복문 사용이 가능 
+
+
+| 이터러블 (순회하다, 반복하다) | 이터러블 아님      |
+| ----------------------------- | ------------------ |
+| 배열, 문자열, Map, Set        | 일반 객체 (Object) |
+
+
+
