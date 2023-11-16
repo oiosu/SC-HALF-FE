@@ -280,4 +280,19 @@ console.log(i, j ,k);
 
 ---
 
+### 🌳 Chapter 2. React
+
+#### [(1) 이벤트](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/2.%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md) 
+
+#### [(2) state](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/3.%20state.md)  
+
+#### [(3) useState](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/4.%20useState.md) 
+
+#### [(4) Form Input](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/5.%20Form%20Input.md)  
+
+#### [(5) Form 제출](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/6.%20Form%20%EC%A0%9C%EC%B6%9C.md)
+
+#### [(6) 자식과 부모간 상태 이동](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/7.%20%EC%9E%90%EC%8B%9D%EA%B3%BC%20%EB%B6%80%EB%AA%A8%EA%B0%84%20%EC%83%81%ED%83%9C%20%EC%9D%B4%EB%8F%99.md)
+
+
 
