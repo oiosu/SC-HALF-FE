@@ -284,15 +284,78 @@ console.log(i, j ,k);
 
 #### [(1) 이벤트](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/2.%20%EC%9D%B4%EB%B2%A4%ED%8A%B8.md) 
 
+* 이벤트 핸들러
+  : 이벤트가 발생되면 실행되는 코드 블럭(보통 프로그래머가 만드는 자바스크립트 함수)
+  : 코드 블럭이 이벤트에 응답해서 실행되기 위해 정의되었을 때, 이를 이벤트 핸들러 등록(register)했다고 함
+
+*  HTMLButtonElement
+  : EventTarget > Node > Element > HTMLElement > HTMLButtonElement
+
+* 이벤트 리스너
+  : 이벤트(사용자의 행동)를 듣는(지켜보는) 메서드, DOM 요소가 필요
+
 #### [(2) state](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/3.%20state.md)  
+
+* state
+  : 컴포넌트 내에서 바뀔 때마다 항상 컴포넌트를 업데이트 해줄 수 있는 값
+> state, props => 값이 바뀔 때 마다 컴포넌트는 업데이트
+> state vs props
+> state : 컴포넌트 안에서 조작할 수 있음
+> props : 부모 컴포넌트에서 자식 컴포넌트로 내려줘야 하는 값임
+
 
 #### [(3) useState](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/4.%20useState.md) 
 
+* useState : State를 업데이트 해주는 React 라이브러리에서 제공해주는 빌트인 훅
+  🤔 Hook? : 리액트 v16.8 버전부터 나온 기능, 함수형 컴포넌트에서만 쓸 수 있는 함수로 리액트의 lifecycle 기능을 연동(hook) 할 수 있음
+
+(1) 해당 컴포넌트 안에서만 사용할 수 있다.
+(2) const [state, setState] = useState(initialState) 와 같이 사용
+
+```javascript
+import React, { useState } from "react";
+
+const Toast = ({messgae}) => {
+	const [text, setText] = useState('sample')
+    const buttonClickHandler = (title) => {
+        setText("changed!");
+        console.log(title);
+    }l
+}
+```
+※ 주의 : state 를 잘못 사용하면 컴포넌트 리렌더링이 많이 일어날 수 있음을 주의하기 
+
+
 #### [(4) Form Input](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/5.%20Form%20Input.md)  
+
+* form input은 <form> <input> 태그를 통해 값을 입력할 수 있는 요소를 추가
+* form input에 값을 입력하는 변화는 onChange 메서드를 사용
+* 여러 개의 상태 처리 시 각각 처리해 주어도 되고, 객체로 하나로 만들어서 처리해 주는 것도 가능
 
 #### [(5) Form 제출](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/6.%20Form%20%EC%A0%9C%EC%B6%9C.md)
 
+
+* `<form>` 에는 onSubmit 이벤트 리스너가 있어서 제출 이벤트를 핸들링
+* 기본 이벤트를 막고 싶다면 event.preventDefault() 를 사용
+* Two-way binding을 통해 상태와 input의 value를 양 방향 연동
+> 만약 form을 제출하고 값을 모두 초기화를 해주고 싶다면?
+> 1. input에 상태를 value 속성으로 넣어준 후
+> 2. 제출을 한 후에 상태를 초기화 해주면
+> 3. value에 초기화된 상태가 반영되어 UI에 업데이트
+
+
 #### [(6) 자식과 부모간 상태 이동](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/7.%20%EC%9E%90%EC%8B%9D%EA%B3%BC%20%EB%B6%80%EB%AA%A8%EA%B0%84%20%EC%83%81%ED%83%9C%20%EC%9D%B4%EB%8F%99.md)
+
+* 자식 컴포넌트의 상태를 부모 컴포너트로 올리고 싶다면, 부모 컴포넌트에서 함수를 만들어서 props를 통해 전달해 주어야 한다.
+* 부모 컴포넌트의 업데이트 된 상태를 자식 컴포넌트로 전달해 주어 UI 가 자동으로 업데이트 해서 변화를 반영할 수 있게 한다.
+
+#### [(7) 이미지 처리](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/8.%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%B2%98%EB%A6%AC.md)
+
+* 이미지 파일의 종류는 jpg, png, svg 등이 있고 각각의 특징에 맞게 적절하게 사용하면 된다.
+* 이미지 파일의 크기가 1000b(9.7KB) 기준으로 큰지 작은지에 따라 이미지 파일을 브라우저에서 처리하는 방식이 달라진다.
+
+#### [(8) 리스트 렌더링(1) _ 리스트 렌더링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/9.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%ED%84%B0%EB%A7%81(1)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81.md)
+
 
 
 
