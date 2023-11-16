@@ -270,7 +270,9 @@ console.log(i, j ,k);
 * 오브젝트 프로퍼티 명안에 연산 가능
 
 (2) 옵셔널 체이닝 
+
 *  `undefined`, `null` 에서는 어떤 프로퍼티를 참조할 수 없다. (TypeError) => 이 에러를 방지 하기 위해 만들어진 ES6 문법 옵셔널 체이닝이다.
+
 
 (3) Map : ES6 에서 추가된 KEY-VALUE 타입의 집합, KEY 는 중복해서 들어갈 수 없다, 이터러블(iterable)_ 순회가능한 구조 
 (4) Set : ES6에서 추가된 집합 객체, 순회가 가능하고 값이 중복해서 들어갈 수 없음, 이터러블(iterable)_ 순회가능한 구조 
@@ -329,14 +331,18 @@ const Toast = ({messgae}) => {
 #### [(4) Form Input](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/5.%20Form%20Input.md)  
 
 * form input은 <form> <input> 태그를 통해 값을 입력할 수 있는 요소를 추가
+
 * form input에 값을 입력하는 변화는 onChange 메서드를 사용
+
 * 여러 개의 상태 처리 시 각각 처리해 주어도 되고, 객체로 하나로 만들어서 처리해 주는 것도 가능
 
 #### [(5) Form 제출](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/6.%20Form%20%EC%A0%9C%EC%B6%9C.md)
 
 
 * `<form>` 에는 onSubmit 이벤트 리스너가 있어서 제출 이벤트를 핸들링
+
 * 기본 이벤트를 막고 싶다면 event.preventDefault() 를 사용
+
 * Two-way binding을 통해 상태와 input의 value를 양 방향 연동
 > 만약 form을 제출하고 값을 모두 초기화를 해주고 싶다면?
 > 1. input에 상태를 value 속성으로 넣어준 후
@@ -347,11 +353,13 @@ const Toast = ({messgae}) => {
 #### [(6) 자식과 부모간 상태 이동](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/7.%20%EC%9E%90%EC%8B%9D%EA%B3%BC%20%EB%B6%80%EB%AA%A8%EA%B0%84%20%EC%83%81%ED%83%9C%20%EC%9D%B4%EB%8F%99.md)
 
 * 자식 컴포넌트의 상태를 부모 컴포너트로 올리고 싶다면, 부모 컴포넌트에서 함수를 만들어서 props를 통해 전달해 주어야 한다.
+
 * 부모 컴포넌트의 업데이트 된 상태를 자식 컴포넌트로 전달해 주어 UI 가 자동으로 업데이트 해서 변화를 반영할 수 있게 한다.
 
 #### [(7) 이미지 처리](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/8.%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%B2%98%EB%A6%AC.md)
 
 * 이미지 파일의 종류는 jpg, png, svg 등이 있고 각각의 특징에 맞게 적절하게 사용하면 된다.
+
 * 이미지 파일의 크기가 1000b(9.7KB) 기준으로 큰지 작은지에 따라 이미지 파일을 브라우저에서 처리하는 방식이 달라진다.
 
 #### [(8) 리스트 렌더링(1) _ 리스트 렌더링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/9.%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A0%8C%ED%84%B0%EB%A7%81(1)%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%A0%8C%EB%8D%94%EB%A7%81.md)
@@ -376,22 +384,27 @@ key={item.id}
 #### [(11) 동적인 스타일링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/12.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(1)%20%EB%8F%99%EC%A0%81%EC%9D%B8%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81.md)
 
 (1) 동적인 인라인 스타일링
+
 (2) CSS 클래스를 동적으로 조작하기 
 
 #### [(12) styled-components](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%203%EC%A3%BC%EC%B0%A8/NOTE/13.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(2)%20styled-components.md)
 
 * css-in-js 방식은 자바스크립트에서 css를 작성하는 방식이다.
+
 * css-in-js 방식은 css를 컴포넌트 레벨로 추상화 해서 관리할 수 있다.
+
 * styled-components는 리액트 컴포넌트 스타일링을 위해 css를 js로 쓸 수 있게 만든 가장 많이 쓰이는 도구 중 하나이다.
 
 #### [(13) CSS Modules](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/14.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(3)%20CSS%20Modules.md)
 
 * CSS Module은 일반적인 CSS 사용 방식과 비슷하나, CSS 클래스 명을 중첩되지 않게 사용할 수 있다.
+
 * 동적으로 CSS Moduel 을 사용하고 싶을 땐, string className 처럼 사용할 수 있다.
 
 #### [(14) tailwindcss](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/15.%20%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81(4)%20tailwindcss.md)
 
 * CSS Framwork는 잘 만들어진 스타일링 도구
+
 * Taiilwindcss 는 utility first CSS 프레임워크로 일관성이 있고 커스텀하기 편해서 빠르게 도입하기 좋은 도구이다.
 
 #### [(15) 디버깅 Part1](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/16.%20%EB%94%94%EB%B2%84%EA%B9%85%20Part1.md)
@@ -405,46 +418,59 @@ key={item.id}
 #### [(16) 디버깅 Part2](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/17.%20%EB%94%94%EB%B2%84%EA%B9%85%20Part2.md)
 
 * React Devtool은 리액트 디버깅에 특화된 크롬 익스텐션 도구이다.
+
 * Google Lighthouse 프로파일링을 통해 표준에 맞는 웹을 개발 할 수 있다.
 
 #### [(17) 이벤트 버블링과 캡처링](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/18.%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EB%B2%84%EB%B8%94%EB%A7%81%EA%B3%BC%20%EC%BA%A1%EC%B2%98%EB%A7%81.md)
 
 * DOM에서 이벤트가 발생 시 타겟 요소이 이벤트 핸들러를 찾는 과정이 존재
+
 * 이벤트 캡처링은 타겟 요소까지 내려가는 과정
+
 * 이벤트 버블링은 타겟 요소에서 위로 올라오는 과정
 
 #### [(18) 복잡한 이벤트와 상태 디자인하기](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/19.%20%EB%B3%B5%EC%9E%A1%ED%95%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%99%80%20%EC%83%81%ED%83%9C%20%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0.md)
 
 *  드롭다운 컴포넌트 (가장 기본적이므로 알아두고 있기)
+
 🥕 state `isopen` : (옵션이 열림 : true), (옵션이 사라짐 : false)
+
 🥕 state `selectedOption` : (옵션이 선택됨 : object), (옵션이 선택되지 않음 : null)
+
 🥕 event handler `handleSelect` : (옵션을 클릭함)
+
 🥕 event handler `hadleClick` : (드롭다운을 클릭함)
 
 #### [(19) 데이터 정렬](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%204%EC%A3%BC%EC%B0%A8/NOTE/20.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%95%EB%A0%AC.md)
 
 * number 타입을 정렬 할 때는 comparator 함수를 사용해주어야 한다.
+
 * string 타입을 정렬할 때는 localCompare() 메서드를 사용해 주어야 한다.
+
 * object 타입의 정렬을 할 때는 정렬 기준에 맞는 로직을 작성해 주어야 한다.
 
 #### [(20) 리액트 심화 (1)_Fragment](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(1)_Fragment.md)
 
 * JSX 문법에서는 요소를 두 개 이상 리턴할 수 없다.
+
 * 이문제를 해결하기 위해 REACT FRAGMENT를 사용할 수 있다. (React.Fragment (공식 문서 참고하기))
 
 #### [(20) 리액트 심화 (2)_Portal](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(2)_Portal.md)
 
 * 모달과 같은 overlay 컴포넌트는 전체 html 에서 동작하게 해야한다.
+
 * 컴포넌트의 위치를 옮겨줄 때 React Portal 을 사용한다.
 
 #### [(21) 리액트 심화 (3)_ref](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(3)_ref.md)
 
 * `ref` 를 사용하면 직접 dom을 참조할 수 있다.
+
 * `ref`를 사용하면 상태를 사용하지 않고 dom의 값들을 조작할 수 있다.
 
 #### [(22) 리액트 심화 (4) useEffect-(1)](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(4)_useEffect.md)
 
 * 사이드 이펙트는 일반적인 UI 렌더링 사이클과 다르게 동작한다.
+
 * useEffect 훅을 통해 사이드 이펙트를 컴포넌트 안에서 핸들링 할 수 있다.
 
 
