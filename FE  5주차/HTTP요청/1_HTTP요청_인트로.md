@@ -5,11 +5,13 @@
 
 ##### 1.  Client vs Server 
 
-![image-20231117104646990](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117104646990.png)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/ee90df44-62a4-499a-a436-9a07a4a4c592)
+
 
 #####  2. HTTP (HyperText Transfer Protocol)
 
-![image-20231117105240170](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117105240170.png)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/ccbf7c89-9bc6-4777-96fd-11298de992c3)
+
 
 : 웹에서 정보를 주고 받을 수 있는 프로토콜으로, 일반적으로는 HTML 문서를 주고 받는데 사용한다. 
 
@@ -27,7 +29,8 @@
 
 * ##### HTTP요청
 
-![image-20231117105808004](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117105808004.png)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/1d5b4df4-0eec-44b1-b401-27ae5f460a21)
+
 
 > * Method _ HTTP를 보내기 위한 방법 (정말 많다) : 주로 사용하는 것은 GET, POST 이다. 
 > * PATH _ HTTP를 보내는 경로이다. 
@@ -37,7 +40,8 @@
 
 * HTTP 응답
 
-![image-20231117110304528](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117110304528.png)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/5f51e342-85b3-447d-8f58-1a7b56c68a8c)
+
 
 > * STATUS CODE_ 요청에 대한 응답에 대한 잘 응답이 되었는지 확인 
 
