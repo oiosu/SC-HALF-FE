@@ -5,7 +5,8 @@
 
 ##### 1.  Client vs Server 
 
-![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/ee90df44-62a4-499a-a436-9a07a4a4c592)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/ba5b735b-e35a-4ef8-b56c-c2826c05a1b2)
+
 
 
 #####  2. HTTP (HyperText Transfer Protocol)
