@@ -467,10 +467,33 @@ key={item.id}
 
 * `ref`를 사용하면 상태를 사용하지 않고 dom의 값들을 조작할 수 있다.
 
-#### [(22) 리액트 심화 (4) useEffect-(1)](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(4)_useEffect.md)
+#### [(22) 사이드 이펙트 처리 (4) useEffect](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20(4)_useEffect.md)
 
 * 사이드 이펙트는 일반적인 UI 렌더링 사이클과 다르게 동작한다.
 
 * useEffect 훅을 통해 사이드 이펙트를 컴포넌트 안에서 핸들링 할 수 있다.
+
+* 유효성 검사는 `input` 값이 우리가 의도한규칙에 맞게 들어오는지 검사
+
+* debounce는 동일한 이벤트가 반복해서 실행되는 경우 일정 시간 지연 시킨 후 처리
+
+
+#### [(23) 사이드 이펙트 처리 (5) useReducer](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EC%82%AC%EC%9D%B4%EB%93%9C%20%EC%9D%B4%ED%8E%99%ED%8A%B8%20%EC%B2%98%EB%A6%AC%20(6)%20useReducer.md)
+
+* 복잡한 상태 다룰 때 `useState`로 하게 되면 side effect가 발생할 수 있다.
+
+* useReducer는 하나의 복잡한 상태를 여러 타입으로 dispatch 하기에 적합한 훅이다.
+
+
+#### [(24) 사이드 이펙트 처리(6) ⭐context API](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/blob/main/FE%20%205%EC%A3%BC%EC%B0%A8/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%8B%AC%ED%99%94%20NOTE/%EC%82%AC%EC%9D%B4%EB%93%9C%20%EC%9D%B4%ED%8E%99%ED%8A%B8%20%EC%B2%98%EB%A6%AC%20(7)%20context%20API.md)
+
+* 리액트에서는 context API 를 제공하는데, 전역 상태 관리를 할 수 있다.
+
+* context에 상태와 로직을 모두 관리하면 컴포넌트에서는 뷰만 신경을 쓸 수 있다.
+
+* context에도 한계가 분명히 존재한다.
+  * 잦은 상태 변화를 핸들링하는 점에서 성능이 떨어지고,
+  * 모든 커뮤니케이션을 다 하려고 하면 너무 무거워진다.
+ 
 
 
