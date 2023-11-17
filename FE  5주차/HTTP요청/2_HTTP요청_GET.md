@@ -82,7 +82,8 @@ async function logJSONData() {
 
 ##### 2. 비동기
 
-![image-20231117144128205](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117144128205.png)
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/7abbeade-e1e6-4c67-b41a-360595f5ebce)
+
 
 ```javascript
 function func1() {
