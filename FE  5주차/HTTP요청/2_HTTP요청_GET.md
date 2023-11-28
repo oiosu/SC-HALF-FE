@@ -84,9 +84,14 @@ async function logJSONData() {
 
 ##### 2. 비동기
 
+<<<<<<< HEAD
 하나의 프로세스가 완료되기 전에 다음 프로세스를 시작하는 방식 
 
 ![image-20231117144128205](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117144128205.png)
+=======
+![image](https://github.com/oiosu/Super-Coding-Front-End-Developer-Course/assets/99783474/7abbeade-e1e6-4c67-b41a-360595f5ebce)
+
+>>>>>>> e9ab405467c2ce514fe67b50e0843a6c7c24940e
 
 ```javascript
 function func1() {
