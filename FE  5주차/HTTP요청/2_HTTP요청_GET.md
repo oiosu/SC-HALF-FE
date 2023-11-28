@@ -9,7 +9,7 @@
 
 * 필요한것 : URL, (브라우저에서 제공하는) fetch API, (선택) header 등 다른 옵션들
 
-* practice 4_15
+* `practice 4_15`
 
 ```react
 import React, { useEffect, useState } from 'react';
@@ -78,9 +78,13 @@ async function logJSONData() {
 }
 ```
 
+`fetch()` 메서드는 하나의 필수 매개변수로 가져오려는 리소스 경로를 받습니다. 반환 값은 해당 요청에 대한 Response로 이행하는 Promise인데, 서버가 헤더를 포함한 응답을 하는 순간 이행합니다. 이는 서버가 HTTP 오류 응답 코드로 응답해도 이행한다는 뜻이다. 선택사항으로 두번째 매개변수에 `init` 옵션 객체를 제공 할 수 있습니다. 
+
 
 
 ##### 2. 비동기
+
+하나의 프로세스가 완료되기 전에 다음 프로세스를 시작하는 방식 
 
 ![image-20231117144128205](C:\Users\bestsu\AppData\Roaming\Typora\typora-user-images\image-20231117144128205.png)
 
@@ -212,3 +216,20 @@ process();
 
 
 * fetch 코드를 async/await 함수로 바꿔주기 
+
+```react
+    const getNewsList = async () => {
+        const response = await fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-10-17&sortBy=publishedAt&apiKey=f9b8fbf5ae5348fa8d6500595d297d7e');
+        const data = await response.json();
+            setNews(data.articles);
+    )}
+```
+
+
+
+---
+
+
+
+* ⭐HTTP GET 요청을 통해 서버에서 데이터를 불러올 수 있고, 이 방식은 비동기적으로 일어난다. 
+* ⭐자바스크립트에서 비동기를 처리하는 방식은 3가지 이다. (콜백함수, promse, asyc/awaits)
